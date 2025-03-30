@@ -7,9 +7,14 @@ site_description: 千叶的博客
 # Page tree
 nav:
   - 主页: 
-    - ME/index.md
+    - Me/index.md
   - 博客: 
-    - BLOG/index.md
+    - Blog/index.md
+  - 笔记:
+    - Learn/快捷键.md
+  - 友链:
+    - Links/index.md
+
 
 
 # [UI]
@@ -122,9 +127,9 @@ markdown_extensions:
   # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#highlight
   - pymdownx.highlight:
       # 显示行号
-      linenums: true
+      linenums: false
       # 显示编程语言名称
-      auto_title: true
+      auto_title: false
       # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#+pymdownx.highlight.line_spans
       line_spans: __span
       # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#+pymdownx.highlight.pygments_lang_class
@@ -155,3 +160,4 @@ extra_css:
   - mkdocs/css/no-footer.css
   # 无序列表符号自定义
   - mkdocs/css/unordered-list-symbols.css
+

@@ -13,6 +13,7 @@ nav:
   - 笔记:
     - Learn/快捷键.md
     - Learn/Git笔记.md
+    - Learn/MkDocs笔记.md
   - 友链:
     - Links/index.md
 
@@ -95,19 +96,32 @@ copyright: 千叶 qianleafy
     #   icon: 
     #   link: 
 
-# [Extensions]
+
 plugins:
-  # [搜索功能]
-  # https://squidfunk.github.io/mkdocs-material/plugins/search/
+  # 为文章添加时间戳
+  - git-revision-date-localized:
+      type: timeago
+      custom_format: "%d. %B %Y" 
+      timezone: Asia/Shanghai
+      locale: zh
+      fallback_to_build_date: false #允许回退到git 不可用时mkdocs build执行的时间
+      enable_creation_date: true    #是否启用创建时间
+      exclude:
+          - index.md
+          - Blog/index.md
+          - Links/index.md
+          - Me/index.md
+      enabled: true
+      strict: true
+  # 加快构建速度
+  - git-committers:
+      enabled: !ENV [CI, false]
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
       lang:
         - zh
         - en
-        - ja
-  # [给单篇文章添加标签]
-  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
-  - tags
+
 markdown_extensions:
   # [数学公式支持]
   # https://squidfunk.github.io/mkdocs-material/reference/math/#katex

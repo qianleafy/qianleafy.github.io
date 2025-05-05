@@ -583,9 +583,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#git" class="md-nav__link">
+  <a href="#linux" class="md-nav__link">
     <span class="md-ellipsis">
-      git命令
+      Linux命令
     </span>
   </a>
   
@@ -756,9 +756,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#git" class="md-nav__link">
+  <a href="#linux" class="md-nav__link">
     <span class="md-ellipsis">
-      git命令
+      Linux命令
     </span>
   </a>
   
@@ -801,60 +801,10 @@
 <h3 id="mkdocs">Mkdocs命令行及语法<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h3>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1">mkdocs serve
 </span></code></pre></div>
-<h3 id="git">git命令<a class="headerlink" href="#git" title="Permanent link">&para;</a></h3>
-<p><div class="language-text highlight"><pre><span></span><code><span id="__span-2-1">git init                                                  # 初始化本地git仓库（创建新仓库）
-</span><span id="__span-2-2">git config --global user.name &quot;xxx&quot;                       # 配置用户名
-</span><span id="__span-2-3">git config --global user.email &quot;xxx@xxx.com&quot;              # 配置邮件
-</span><span id="__span-2-4">git clone [url]                                           # clone远程仓库
-</span><span id="__span-2-5">git add xyz                                               # 添加xyz文件至index
-</span><span id="__span-2-6">git add .                                                 # 增加当前子目录下所有更改过的文件至index
-</span><span id="__span-2-7">git commit -m &#39;xxx&#39;                                       # 提交
-</span><span id="__span-2-8">git commit --amend -m &#39;xxx&#39;                               # 合并上一次提交（用于反复修改）
-</span><span id="__span-2-9">git commit -am &#39;xxx&#39;                                      # 将add和commit合为一步
-</span><span id="__span-2-10">git rebase
-</span><span id="__span-2-11">git branch -d hotfixes/BJVEP933                           # 删除分支hotfixes/BJVEP933（本分支修改已合并到其他分支）
-</span><span id="__span-2-12">git merge origin/master                                   # 合并远程master分支至当前分支
-</span><span id="__span-2-13">git pull                                                  # 拉取最新代码
-</span><span id="__span-2-14">git pull origin master                                    # 获取远程分支master并merge到当前分支
-</span><span id="__span-2-15">git fetch                                                 # 获取所有远程分支（不更新本地分支，另需merge）
-</span><span id="__span-2-16">git branch                                                # 显示本地分支
-</span><span id="__span-2-17">git branch -a                                             # 显示所有分支
-</span><span id="__span-2-18">git branch -m master master_copy                          # 本地分支改名
-</span><span id="__span-2-19">git checkout -b master_copy                               # 从当前分支创建新分支master_copy并切换
-</span><span id="__span-2-20">git checkout -b master master_copy                        # 完整版切换分支
-</span><span id="__span-2-21">git checkout features/performance                         # 切换已存在的features/performance分支
-</span><span id="__span-2-22">git push origin master                                    # 将当前分支push到远程master分支
-</span><span id="__span-2-23">git revert dfb02e6e4f2f7b573337763e5c0013802e392818       # 撤销提交dfb02e6e4f2f7b573337763e5c0013802e392818
-</span><span id="__span-2-24">git show-branch --all                                     # 图示所有分支历史
-</span><span id="__span-2-25">git whatchanged                                           # 显示提交历史对应的文件修改
-</span><span id="__span-2-26">
-</span><span id="__span-2-27">
-</span><span id="__span-2-28">git rm xxx                                                # 删除index中的文件
-</span><span id="__span-2-29">git rm -r *                                               # 递归删除
-</span><span id="__span-2-30">git log                                                   # 显示提交日志
-</span><span id="__span-2-31">git log --stat                                            # 显示提交日志及相关变动文件
-</span><span id="__span-2-32">git show dfb02e6e4f2f7b573337763e5c0013802e392818         # 显示某个提交的详细内容
-</span><span id="__span-2-33">git show dfb02                                            # 可只用commitid的前几位
-</span><span id="__span-2-34">git show HEAD                                             # 显示HEAD提交日志
-</span><span id="__span-2-35">git tag                                                   # 显示已存在的tag
-</span><span id="__span-2-36">git tag -a v2.0 -m &#39;xxx&#39;                                  # 增加v2.0的tag
-</span><span id="__span-2-37">git show v2.0                                             # 显示v2.0的日志及详细内容
-</span><span id="__span-2-38">git log v2.0                                              # 显示v2.0的日志
-</span><span id="__span-2-39">git diff                                                  # 显示所有未添加至index的变更
-</span><span id="__span-2-40">git diff --cached                                         # 显示所有已添加index但还未commit的变更
-</span><span id="__span-2-41">git diff HEAD^                                            # 比较与上一个版本的差异
-</span><span id="__span-2-42">git diff HEAD -- ./lib                                    # 比较与HEAD版本lib目录的差异
-</span><span id="__span-2-43">git diff origin/master..master                            # 比较远程分支master上有本地分支master上没有的
-</span><span id="__span-2-44">git diff origin/master..master --stat                     # 只显示差异的文件，不显示具体内容
-</span><span id="__span-2-45">git remote add origin git+ssh://git@192.168.53.168/VT.git # 增加远程定义（用于push/pull/fetch）
-</span><span id="__span-2-46">git branch --contains 50089                               # 显示包含提交50089的分支
-</span><span id="__span-2-47">git branch -r                                             # 显示所有原创分支
-</span><span id="__span-2-48">git branch --merged                                       # 显示所有已合并到当前分支的分支
-</span><span id="__span-2-49">git branch --no-merged                                    # 显示所有未合并到当前分支的分支
-</span><span id="__span-2-50">git config core.ignorecase          # 检查是否大小写敏感, ture为敏感
-</span><span id="__span-2-51">git config core.ignorecase false    # 设置为对大小写敏感
+<h3 id="linux">Linux命令<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1">mkdir emptyFold    # 创建空文件夹
+</span><span id="__span-2-2">pwd                # 显示当前文件位置
 </span></code></pre></div>
-更多命令可参考：<a href="https://www.runoob.com/git/git-tutorial.html">git教程</a></p>
 
 
 
@@ -877,7 +827,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="2025年5月5日 11:45:21"><span class="timeago" datetime="2025-05-05T11:45:21+08:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年5月5日 11:45:21">2025-05-05</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="2025年5月5日 23:40:42"><span class="timeago" datetime="2025-05-05T23:40:42+08:00" locale="zh"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年5月5日 23:40:42">2025-05-05</span>
   </span>
 
     

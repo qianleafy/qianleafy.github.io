@@ -7,15 +7,15 @@ site_description: 千叶的博客
 # Page tree
 nav:
   - 主页: 
-    - Me/index.md
+    - me/index.md
   - 博客: 
-    - Blog/index.md
+    - blog/index.md
   - 笔记:
-    - Learn/快捷键.md
-    - Learn/Git笔记.md
-    - Learn/MkDocs笔记.md
+    - learn/快捷键.md
+    - learn/Git笔记.md
+    - learn/MkDocs笔记.md
   - 友链:
-    - Links/index.md
+    - link/index.md
 
 
 
@@ -108,9 +108,9 @@ plugins:
       enable_creation_date: true    #是否启用创建时间
       exclude:
           - index.md
-          - Blog/index.md
-          - Links/index.md
-          - Me/index.md
+          - blog/index.md
+          - link/index.md
+          - me/index.md
       enabled: true
       strict: true
   # 加快构建速度

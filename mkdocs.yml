@@ -12,6 +12,7 @@ nav:
     - Blog/index.md
   - 笔记:
     - Learn/快捷键.md
+    - Learn/Git笔记.md
   - 友链:
     - Links/index.md
 
@@ -98,15 +99,14 @@ copyright: 千叶 qianleafy
 plugins:
   # [搜索功能]
   # https://squidfunk.github.io/mkdocs-material/plugins/search/
-  # 之前中文搜索是 Insider 的功能（https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/），现在好像已经是默认功能了，
   - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
       lang:
         - zh
         - en
         - ja
   # [给单篇文章添加标签]
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
-  # https://squidfunk.github.io/mkdocs-material/plugins/tags/#meta.tags
   - tags
 markdown_extensions:
   # [数学公式支持]

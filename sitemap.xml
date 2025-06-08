@@ -2,30 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://qianleafy.github.io/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-06-08</lastmod>
     </url>
     <url>
          <loc>https://qianleafy.github.io/blog/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-06-08</lastmod>
     </url>
     <url>
          <loc>https://qianleafy.github.io/learn/Git%E7%AC%94%E8%AE%B0/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-06-08</lastmod>
     </url>
     <url>
          <loc>https://qianleafy.github.io/learn/MkDocs%E7%AC%94%E8%AE%B0/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-06-08</lastmod>
     </url>
     <url>
          <loc>https://qianleafy.github.io/learn/%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-06-08</lastmod>
+    </url>
+    <url>
+         <loc>https://qianleafy.github.io/learn/%E7%AE%97%E6%B3%95%E9%A2%98/</loc>
+         <lastmod>2025-06-08</lastmod>
     </url>
     <url>
          <loc>https://qianleafy.github.io/link/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-06-08</lastmod>
     </url>
     <url>
          <loc>https://qianleafy.github.io/me/</loc>
-         <lastmod>2025-05-05</lastmod>
+         <lastmod>2025-06-08</lastmod>
     </url>
 </urlset>
